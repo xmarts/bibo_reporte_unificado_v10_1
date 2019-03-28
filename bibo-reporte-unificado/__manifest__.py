@@ -5,7 +5,7 @@
     'description': 'Modificacion del reporte de operaciones',
     'category': 'Personalizacion',
     'author': 'Xmarts',
-    'website': 'www.xmarwdwedtsfgh.com',
+    'website': 'www.xmarts.com',
     'depends': [
         'mrp',
                 ],
