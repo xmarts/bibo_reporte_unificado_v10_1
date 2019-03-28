@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="report_mrporder_inherit" inherit_id="mrp.report_mrporder">
-            <xpath expr="//div[@t-if='o.workorder_ids']/table/tr[1]/td[2]" position="after">
-                <td class="text-center"><strong>Fecha de inicio</strong></td>
-                <td class="text-center"><strong>Fecha de finalización</strong></td>
+       <template id="report_mrporder_inherit" inherit_id="mrp.report_mrporder">
+            <xpath expr="//div[@t-if='o.workorder_ids']/table/tr[1]/th[2]" position="after">
+                <th class="text-center"><strong>Fecha de inicio</strong></th>
+                <th class="text-center"><strong>Fecha de finalización</strong></th>
             </xpath>
             <xpath expr="//div[@t-if='o.workorder_ids']/table/tr[1]" position="inside">
                 <td class="text-center"><strong>Estado</strong></td>
             </xpath>
             <xpath expr="//div[@t-if='o.workorder_ids']/table/tr[2]/td[2]" position="after">
-                <td><span t-esc="line2.date_start" /></td>
+                <td><span t-esc="line2.date_start"/></td>
                 <td><span t-esc="line2.date_finished" /></td>
             </xpath>
             <xpath expr="//div[@t-if='o.workorder_ids']/table/tr[2]" position="inside">
@@ -18,8 +18,8 @@
             </xpath>
         </template>
         <template id="report_operacion_unificado">
-            <t t-call="report.html_container">
-                <t t-call="report.external_layout">
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
                     <div class="page">
                         <t t-set="contador" t-value="1" />
                         <t t-set="cantpro" t-value="0" />
