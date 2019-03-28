@@ -3,7 +3,7 @@
     'version': '1.0',
     'summary': 'Personalizacion de bibo',
     'description': 'Modificacion del reporte de operaciones',
-    'category': 'Personalizacion',
+    'category': 'Personalizacion de modulos',
     'author': 'Xmarts',
     'website': 'www.xmarts.com',
     'depends': [
